@@ -1,8 +1,6 @@
-<?
+<?php
 // Vuln     ::: This code vuln to SQL Injection as it directly use $id from input payload, also the user and password is hardcoded in php file, its better to put in env variable / keyvault
 // Solution ::: Use prepared statement for query, use env for user and password
-
-<?php
 
 // Get database credentials from environment variables
 $db_host = getenv('DB_HOST');
